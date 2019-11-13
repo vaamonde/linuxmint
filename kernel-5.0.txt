@@ -1,0 +1,16 @@
+Olá amigos, quem fala é o Robson Vaamonde do site Procedimentos em TI e do projeto Bora para Prática!!!
+
+Nesse vídeo, VOU MOSTRAR a instalação e configuração básico do Kernel versão 5.0 no Linux Mint 19.2 Tina, vamos lá...
+
+Antes de iniciar a instalação, acesse o canal do Bora para Prática no YouTUBE, curte esse vídeo, comente, compartilhe, se escreva no canal, clica no sininho para receber notificações, e ajude o projeto Bora para Prática a continuar fazendo vídeos gratuítos para o canal.
+
+Mais Bora para Prática!!!... primeiro vou acessar o site do Kernel: https://www.kernel.org/. O Kernel (ou na sua tradução núcleo) é o componente central do sistema operacional na maioria dos computadores; ele serve de ponte entre aplicativos e o processamento real de dados feito a nível de hardware. As principais responsabilidades do Kernel e: gerenciar os recursos do sistema operacional (a comunicação entre componentes de hardware e software). O Kernel.org é o principal ponto de distribuição de código fonte para o Kernel do Linux, que e a base do sistema operacional Linux. O website e mantido pela Organização do Kernel do Linux, hospeda os repositórios que disponibilizam todas as versões do código fonte do Kernel para todos os usuários. O propósito principal do kernel.org é hospedar repositórios usados pelos desenvolvedores e mantenedores do Kernel do Linux de várias distribuições diferentes. Além disso, ele hospeda vários outros projetos ou seus espelhos, incluindo o Projeto de Documentação Oficial do Linux (a fomosa LDP) e projeto CPAN (de autenticação segura).
+
+Primeira Etapa: Informações do Sistema Operacional e Kernel
+sudo hostnamectl
+sudo lsb_release -a
+sudo uname -a
+sudo dpkg --list | grep linux-image
+
+Segunda Etapa: Instalação do Kernel versão 5.x
+Utilizar o MintUpdate para fazer a instalação
