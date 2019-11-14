@@ -35,7 +35,8 @@ sudo apt autoremove         #Remoção dos softwares desnecessários
 sudo apt autoclean          #Limpeza dos caches
 sudo apt clean              #Limpeza dos caches
 
-#Quarta Etapa: Habilitando a arquitetura i386 e adicionando o PPA do Driver da NVIDIA e Intel (não é obrigatório a instalação)
+#Quarta Etapa: Habilitando a arquitetura i386 e adicionando o PPA do Driver da NVIDIA e Intel 
+(não é obrigatório a instalação dos PPA's e habilitar a arquitetura i386)
 sudo dpkg --add-architecture i386                       #Adicionando a arquitetura 32 Bits
 sudo add-apt-repository ppa:graphics-drivers/ppa        #Adicionando o PPA dos Drivers da NVIDIA
 sudo add-apt-repository ppa:paulo-miguel-dias/pkppa     #Adicionando o PPA dos Drivers da Intel e AMD
@@ -43,17 +44,21 @@ sudo apt update                                         #Atualização das lista
 
 #Quinta Etapa: Instalação das Dependências Base e Ferramentas de Suporte
 sudo apt install build-essential vim psensor tlp cpufrequtils cputool       #Instalação das Dependências
-sudo apt upgrade        #Atualização dos software
+sudo apt upgrade                                                            #Atualização dos software
 
-#Sexta Etapa: Configuração do Suporte ao Intel Thermald (não é obrigatório a configuração)
-sudo cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_driver        #Verificando se o suporte ao Interl Thermald está habilitado
-sudo cpufreq-info       #Verificando as informações detalhadas do processador
+#Sexta Etapa: Configuração do Suporte ao Intel Thermald 
+(não é obrigatório a configuração do suporte ao Intel Thermald)
+sudo cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_driver    #Verificando se o suporte ao Interl Thermald está habilitado
+sudo cpufreq-info                                               #Verificando as informações detalhadas do processador
+
+(etapa de configuração do Intel Thermald só e feita se não for reconhecida nos comandos anterior)
 sudo vim /etc/default/grub
     intel_pstate=enable
 sudo update-grub
 sudo reboot
 
-#Sétima Etapa: Instalação do Driver da NVIDIA via Gerenciador de Drivers (recomendado, após a instalação, reiniciar o notebook)
+#Sétima Etapa: Instalação do Driver da NVIDIA via Gerenciador de Drivers 
+(recomendado fazer a instalação por ambiente gráfico, após a instalação, reiniciar o desktop, notebook ou imac)
 
 #Oitava Etapa: Configuração da falha de Screen Tearing do Driver da NVIDIA (DRM Direct Rendering Manager)
 sudo vim /etc/modprobe.d/nvidia-drm-nomodeset.conf
@@ -66,7 +71,8 @@ sudo cat /sys/module/nvidia_drm/parameters/modeset
 sudo dkms status
 sudo nvidia-smi
 
-#Décima Etapa: Instalação do Suporte a Vulkan, Mesa e Software de Benchmark (não é obrigatório a instalação)
+#Décima Etapa: Instalação do Suporte a Vulkan, Mesa e Software de Benchmark 
+(não é obrigatório a instalação dos softwares do Vuljan e Mesa)
 sudo apt install libnvidia-gl-390 libnvidia-gl-390:i386 libvulkan1 libvulkan1:i386 mesa-vulkan-drivers mesa-vulkan-drivers:i386 glmark2
 sudo reboot
 
