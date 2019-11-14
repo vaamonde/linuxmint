@@ -1,5 +1,6 @@
 A instalação do Driver da NVIDIA no GNU Linux melhorou bastante, mais infelizmente em alguns equipamentos mais antigos
-(Placas de Vídeo da NVIDIA modelos antigos), o desempenho e a qualidade gráfica ainda não e das melhores, por causa disso, vou mostrar os procedimentos que utilizo para instalar o driver da NVIDIA no Dell XPS L502X.
+(Placas de Vídeo da NVIDIA modelos antigos), o desempenho e a qualidade gráfica ainda não e das melhores, por causa disso, 
+vou mostrar os procedimentos que utilizo para instalar o driver da NVIDIA no Dell XPS L502X.
 
 Lembrando que temos basicamente três tipos de Driver da NVIDIA;
 
