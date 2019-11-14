@@ -1,14 +1,13 @@
-Site: https://pt.youglish.com/search/directx/us
+Wine (um acrónimo recursivo do inglês em sua tradução, Wine Não é um Emulador) é uma camada de compatibilidade para sistemas
+operacionais UNIX e GNU Linux que tem como objetivo a implementação das API's do Microsoft Windows, desta forma, em teoria,
+o Wine permite a execução de aplicações desenvolvidas para a plataforma Microsoft Windows, funcionar nativamente em outros
+sistemas operacionais (como por exemplo o GNU Linux). Por reimplementar as bibliotecas de tempo de execução do Windows
+(as famosas DLL's), o Wine não é um emulador, não fazendo qualquer emulação para executar software do Windows. O Wine possui
+três versões: stable (Estável), development (Desenvolvimento) e staging (Istegin adaptação).
 
-Olá amigos, quem fala é o Robson Vaamonde do site Procedimentos em TI e do projeto Bora para Prática!!!
-
-Nesse vídeo, VOU MOSTRAR a instalação e configuração básica do software WineHq Staging (stêigin) e o Winetricks no Linux Mint 19.2 Tina, vamos lá...
-
-Antes de iniciar a instalação, acesse o canal do Bora para Prática no YouTUBE, curte esse vídeo, comente, compartilhe, se escreva no canal, clica no sininho para receber notificações, e ajude o projeto Bora para Prática a continuar fazendo vídeos gratuítos para o canal.
-
-Mais Bora para Prática!!!... primeiro, VOU ACESSAR o site do WineHq: winehq.org/. Wine (um acrónimo recursivo do inglês em sua tradução, Wine Não é um Emulador) é uma camada de compatibilidade para sistemas operacionais UNIX e GNU Linux que tem como objetivo a implementação das API's do Microsoft Windows, desta forma, em teoria, o Wine permite a execução de aplicações desenvolvidas para a plataforma Microsoft Windows, funcionar nativamente em outros sistemas operacionais (como por exemplo o GNU Linux). Por reimplementar as bibliotecas de tempo de execução do Windows (as famosas DLL's), o Wine não é um emulador, não fazendo qualquer emulação para executar software do Windows. O Wine possui três versões: stable (Estável), development (Desenvolvimento) e staging (Istegin adaptação).
-
-O projeto Winetricks é um script auxiliar para baixar e instalar várias bibliotecas de tempo de execução, necessárias para executar alguns programas do Windows no Wine. Essas bibliotecas podem incluir substituições de componentes do Wine usando bibliotecas de código fonte aberto (open source) ou fechado (free software).
+O projeto Winetricks é um script auxiliar para baixar e instalar várias bibliotecas de tempo de execução, necessárias para
+executar alguns programas do Windows no Wine. Essas bibliotecas podem incluir substituições de componentes do Wine usando
+bibliotecas de código fonte aberto (open source) ou fechado (free software).
 
 WineHq......: https://www.winehq.org/
 WineTricks..: https://wiki.winehq.org/Winetricks
