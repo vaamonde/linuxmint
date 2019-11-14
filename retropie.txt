@@ -1,4 +1,10 @@
-O RetroPie permite que você transforme seu computador em uma máquina de jogos retrô, o projeto se baseou no Raspbian, EmulationStation, RetroArch e muitos outros, permitindo relembrar os jogos clássicos de Arcade e dos famosos Consoles Atari, Mega Driver, Super Nintendo etc, com o mínimo de configuração de hardware (EXEMPLO você pode utilizar uma placa do Raspberry Pi 2/3/4), você pode jogar utilizando o Teclado ou Joystick (EXEMPLO você pode usar joystick dos consoles Playstation 2/3/4, Xbox 360/One, Genérico, Arcade, etc) para instalar o RetroPie no Mint, temos várias etapas.
+O RetroPie permite que você transforme seu computador em uma máquina de jogos retrô, o projeto se baseou no Raspbian,
+EmulationStation, RetroArch e muitos outros, permitindo relembrar os jogos clássicos de Arcade e dos famosos Consoles Atari,
+Mega Driver, Super Nintendo etc, com o mínimo de configuração de hardware (EXEMPLO você pode utilizar uma placa do Raspberry
+Pi 2/3/4), você pode jogar utilizando o Teclado ou Joystick (EXEMPLO você pode usar joystick dos consoles Playstation 2/3/4,
+Xbox 360/One, Genérico, Arcade, etc) para instalar o RetroPie no Mint, temos várias etapas.
+
+Site do RetroPie: https://retropie.org.uk/
 
 #Primeira Etapa: Verificação da versão do Linux Mint
 sudo hostnamectl        #Verificando informações do sistema
