@@ -10,11 +10,13 @@ gerenciamento de programas desenvolvidos para a Plataforma Microsoft Windows rod
 Wine. Mais especificamente, visa melhorar a integração do Wine com o Desktop e facilitar a criação de programas
 e ferramentas que se integrem no Wine. O projeto é uma evolução do software PlayOnLinux (acrônimo POL), muitas vezes,
 não existe uma comparação entre os dois, mais sim, em alguns casos, o uso do PlayOnLinux e o Vineyard facilita o
-processo de instalação e configuração de software mais complexos, se no PlayOnLinux não funcionar, pode ser que no Vineyard funcione.
+processo de instalação e configuração de software mais complexos, se no PlayOnLinux não funcionar, pode ser que no
+Vineyard funcione.
 
 O projeto Q4Wine é uma interface gráfica desenvolvida utilizando a linguagem de prgramação Qt para Wine. Ele tem
 o objetivo de ajudar a gerenciar os prefixos do Wine e aplicativos instalados de forma simples. A ideia geral do Q4Wine
-vem dos scripts do Winetools e do Winetricks, que foram inicialmente escritos para facilitar o processo de instalação e configuração de software e suas dependências como as famosas DLL's no Wine.
+vem dos scripts do Winetools e do Winetricks, que foram inicialmente escritos para facilitar o processo de instalação e
+configuração de software e suas dependências como as famosas DLL's no Wine.
 
 O projeto CrossOver (anteriormente conhecido por CrossOver Office) é o nome coletivo de três programas comerciais e
 proprietários (Não Open Source e Não Free Software) desenvolvidos pela empresa CodeWeavers que permitem que diversas
