@@ -1,80 +1,75 @@
-Olá amigos, quem fala é o Robson Vaamonde do site Procedimentos em TI e do projeto Bora para Prática!!!
-
-Nesse vídeo, VOU MOSTRAR a instalação e configuração do Drive da Placa de Vídeo NVIDIA no Linux Mint 19.2 Tina rodando em um Notebook Dell XPS modelo L502X, vamos lá...
-
-Antes de iniciar a instalação, acesse o canal do Bora para Prática no YouTUBE, curte esse vídeo, comente, compartilhe, se escreva no canal, clica no sininho para receber notificações, e ajude o projeto Bora para Prática a continuar fazendo vídeos gratuítos para o canal.
-
-Mais Bora para Prática!!!... Nesse vídeo não vou ficar de enrolação, nem de blá blá blá ou enchendo linguiça, então bora para prática...
-
-Primeira, vou acessar o meu reposótório do Mega.nz,
-
-A instalação do Driver da NVIDIA no GNU Linux melhorou bastante, mais infelizmente em alguns equipamentos mais antigos (Placas de Vídeo da NVIDIA modelos antigos), o desempenho e a qualidade gráfica ainda não e das melhores, por causa disso, nesse vídeo vou mostrar os procedimentos que utilizo para instalar o driver da NVIDIA no meu Dell XPS L502X.
+A instalação do Driver da NVIDIA no GNU Linux melhorou bastante, mais infelizmente em alguns equipamentos mais antigos
+(Placas de Vídeo da NVIDIA modelos antigos), o desempenho e a qualidade gráfica ainda não e das melhores, por causa disso, vou mostrar os procedimentos que utilizo para instalar o driver da NVIDIA no Dell XPS L502X.
 
 Lembrando que temos basicamente três tipos de Driver da NVIDIA;
 
-Nouveau: O Nouveau é um driver de dispositivo gráfico livre e de código aberto para placas de vídeo da Nvidia e da família de SoCs Tegra, escrito por engenheiros de software independentes, com um pouco de ajuda de funcionários da Nvidia
+Nouveau: O Nouveau é um driver de dispositivo gráfico livre e de código aberto para placas de vídeo da Nvidia e da família de
+SoCs Tegra, escrito por engenheiros de software independentes, com um pouco de ajuda de funcionários da Nvidia
 
-Bumblebee: O Bumblebee é um esforço para fazer com que os Laptops (Notebook) habilitados para Nvidia Optimus funcionem em sistemas GNU/Linux. Esse recurso envolve duas placas gráficas de vídeo com dois perfis diferentes de consumo de energia conectados de maneira em camadas, compartilhando um único buffer de estrutura.
+Bumblebee: O Bumblebee é um esforço para fazer com que os Laptops (Notebook) habilitados para Nvidia Optimus funcionem em
+sistemas GNU/Linux. Esse recurso envolve duas placas gráficas de vídeo com dois perfis diferentes de consumo de energia
+conectados de maneira em camadas, compartilhando um único buffer de estrutura.
 
-Nvidia: O driver proprietário da Nvidia, a versão atual pode ser baixada da site da Nvidia e algumas distribuições GNU/Linux já contêm em seus repositórios os drivers para instalação.
+Nvidia: O driver proprietário da Nvidia, a versão atual pode ser baixada da site da Nvidia e algumas distribuições GNU/Linux
+já contêm em seus repositórios os drivers para instalação.
 
-Primeira Etapa: Verificação da versão do Linux Mint
-sudo hostnamectl
-sudo lsb_release -c
-sudo uname -a
+#Primeira Etapa: Verificação da versão do Linux Mint
+sudo hostnamectl        #Verificando informações do sistema
+sudo lsb_release -c     #Verificando o codinome do 
+sudo uname -a           #Verificando a versão do Kernel
 
-Segunda Etapa: Verificação do Hardware e da Placa de Vídeo
-sudo lspci | grep VGA
-sudo lshw -class display
-sudo inxi -G
-sudo ubuntu-drivers devices
-https://www.nvidia.com/Download/index.aspx?lang=en-us
+#Segunda Etapa: Verificação do Hardware e da Placa de Vídeo
+sudo lspci | grep VGA           #Lintando os dispositivos de vídeo
+sudo lshw -class display        #Informações detralhadas dos dispositivos de vídeo
+sudo inxi -G                    #Software de inventário dos dispositivos de vídeo
+sudo ubuntu-drivers devices     #Software de instalação de drivers de vídeo
 
-Terceira Etapa: Atualização do Sistema Operacional Linux Mint
-sudo apt update
-sudo apt upgrade
-sudo apt dist-upgrade
-sudo apt autoremove
-sudo apt autoclean
-sudo apt clean
+#Site do Driver da NVIDIA: https://www.nvidia.com/Download/index.aspx?lang=en-us
 
-Quarta Etapa: Habilitando a arquitetura i386 e adicionando o PPA do Driver da NVIDIA e Intel (não é obrigatório a instalação)
-sudo dpkg --add-architecture i386
-sudo add-apt-repository ppa:graphics-drivers/ppa
-sudo add-apt-repository ppa:paulo-miguel-dias/pkppa
-sudo apt update
+#Terceira Etapa: Atualização do Sistema Operacional Linux Mint
+sudo apt update             #Atualização das listas do apt
+sudo apt upgrade            #Atualização dos software
+sudo apt dist-upgrade       #Atualização do firmaware e kernel
+sudo apt autoremove         #Remoção dos softwares desnecessários
+sudo apt autoclean          #Limpeza dos caches
+sudo apt clean              #Limpeza dos caches
 
-Quinta Etapa: Instalação das Dependências Base e Ferramentas de Suporte
-sudo apt install build-essential vim psensor tlp cpufrequtils cputool
-sudo apt upgrade
+#Quarta Etapa: Habilitando a arquitetura i386 e adicionando o PPA do Driver da NVIDIA e Intel (não é obrigatório a instalação)
+sudo dpkg --add-architecture i386                       #Adicionando a arquitetura 32 Bits
+sudo add-apt-repository ppa:graphics-drivers/ppa        #Adicionando o PPA dos Drivers da NVIDIA
+sudo add-apt-repository ppa:paulo-miguel-dias/pkppa     #Adicionando o PPA dos Drivers da Intel e AMD
+sudo apt update                                         #Atualização das listas do apt
 
-Sexta Etapa: Configuração do Suporte ao Intel Thermald (não é obrigatório a configuração)
-sudo cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_driver
-sudo cpufreq-info
+#Quinta Etapa: Instalação das Dependências Base e Ferramentas de Suporte
+sudo apt install build-essential vim psensor tlp cpufrequtils cputool       #Instalação das Dependências
+sudo apt upgrade        #Atualização dos software
+
+#Sexta Etapa: Configuração do Suporte ao Intel Thermald (não é obrigatório a configuração)
+sudo cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_driver        #Verificando se o suporte ao Interl Thermald está habilitado
+sudo cpufreq-info       #Verificando as informações detalhadas do processador
 sudo vim /etc/default/grub
     intel_pstate=enable
 sudo update-grub
 sudo reboot
 
-Sétima Etapa: Instalação do Driver da NVIDIA via Gerenciador de Drivers (recomendado, após a instalação, reiniciar o notebook)
+#Sétima Etapa: Instalação do Driver da NVIDIA via Gerenciador de Drivers (recomendado, após a instalação, reiniciar o notebook)
 
-Oitava Etapa: Configuração da falha de Screen Tearing do Driver da NVIDIA (DRM Direct Rendering Manager)
+#Oitava Etapa: Configuração da falha de Screen Tearing do Driver da NVIDIA (DRM Direct Rendering Manager)
 sudo vim /etc/modprobe.d/nvidia-drm-nomodeset.conf
     options nvidia-drm modeset=1
 sudo update-initramfs -u
 sudo reboot
 
-Nona Etapa: Verificação do DRM Screen Tearing da NVIDIA e Drivers Instalados
+#Nona Etapa: Verificação do DRM Screen Tearing da NVIDIA e Drivers Instalados
 sudo cat /sys/module/nvidia_drm/parameters/modeset
-    Y
 sudo dkms status
 sudo nvidia-smi
 
-Décima Etapa: Instalação do Suporte a Vulkan, Mesa e Software de Benchmark (não é obrigatório a instalação)
+#Décima Etapa: Instalação do Suporte a Vulkan, Mesa e Software de Benchmark (não é obrigatório a instalação)
 sudo apt install libnvidia-gl-390 libnvidia-gl-390:i386 libvulkan1 libvulkan1:i386 mesa-vulkan-drivers mesa-vulkan-drivers:i386 glmark2
 sudo reboot
 
-Configuração da Placa de Vídeo e Teste de Desempenho
+#Configuração da Placa de Vídeo e Teste de Desempenho
 Site teste Screen Tearing: https://www.youtube.com/watch?v=NKqG5uUwNKA
 Fix Firefox Screen Tearing: about:config (layers.acceleration.force-enabled - true)
 glxdemo
@@ -82,22 +77,3 @@ glxgears
 glxheads
 glmark2
 unigine-heaven
-
-===============================================================================
-Site: https://medium.com/@coladibriatico94/setup-linux-mint-19-tara-with-nvidia-cuda-for-machine-learning-556f887f70ed
-Site: https://mrprajesh.blogspot.com/2018/11/install-cuda-10-on-linux-mint-19-or.html
-Site: http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/
-Site: http://www.castoriscausa.com/posts/ge62vr-mint-gtx1060
-
-Décima Primeira Etapa: Instalação do suporte ao CUDA da NVIDIA
-wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-repo-ubuntu1804_10.1.243-1_amd64.deb
-sudo dpkg -i cuda-repo-ubuntu1804_10.1.243-1_amd64.deb
-sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
-sudo apt update
-sudo apt install freeglut3 freeglut3-dev libxi-dev libxmu-dev g++ libx11-dev libglu1-mesa libglu1-mesa-dev
-sudo apt install cuda nvidia-cuda-toolkit
-sudo 
-
-sudo apt update
-sudo apt install nvidia-driver-430 nvidia-settings
-sudo apt install nvidia-utils-430 nvidia-profiler nvidia-prime nvidia-dkms-430 nvidia-compute-utils-430 nvidia-headless-430 nvidia-kernel-source-430 xserver-xorg-hwe-18.04
