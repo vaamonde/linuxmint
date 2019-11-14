@@ -1,18 +1,27 @@
-Olá amigos, quem fala é o Robson Vaamonde do site Procedimentos em TI e do projeto Bora para Prática!!!
+O projeto PlayOnLinux (em português: "Jogue No Linux") é um front-end gráfico para a camada de compatibilidade de software do
+Wine , possibilitando que usuários do GNU/Linux instalem jogos eletrônicos desenvolvidos para a Plataforma Microsoft
+Windows, bem como muitos outros aplicativos. O sistema fornece scripts em shell prontos que especificam a configuração do Wine
+necessária para instalar e executar um aplicativo específico ou um jogo, facilitando a sua instalação. Ele utiliza um banco de
+dados de scripts online para instalar diferentes aplicativos que necessitam de configurações especiais e geralmente são mais
+complexos para instalar e configurar manualmente no Wine.
 
-Nesse vídeo, VOU MOSTRAR a instalação e configuração básica dos software (sóftuér) de Gerenciamento Gráfico do Wine (wáin) no Linux (lí-nucs) Mint 19.2 Tina, vamos lá...
+O projeto Vineyard é uma coleção de ferramentas e bibliotecas projetadas para facilitar a instalação e o
+gerenciamento de programas desenvolvidos para a Plataforma Microsoft Windows rodarem nativamente no GNU/Linux utilizando o
+Wine. Mais especificamente, visa melhorar a integração do Wine com o Desktop e facilitar a criação de programas
+e ferramentas que se integrem no Wine. O projeto é uma evolução do software PlayOnLinux (acrônimo POL), muitas vezes,
+não existe uma comparação entre os dois, mais sim, em alguns casos, o uso do PlayOnLinux e o Vineyard facilita o
+processo de instalação e configuração de software mais complexos, se no PlayOnLinux não funcionar, pode ser que no Vineyard funcione.
 
-Antes de iniciar a instalação, acesse o canal do Bora para Prática no YouTUBE, curte esse vídeo, comente, compartilhe, se escreva no canal, clica no sininho para receber notificações, e ajude o projeto Bora para Prática a continuar fazendo vídeos gratuítos para o canal.
+O projeto Q4Wine é uma interface gráfica desenvolvida utilizando a linguagem de prgramação Qt para Wine. Ele tem
+o objetivo de ajudar a gerenciar os prefixos do Wine e aplicativos instalados de forma simples. A ideia geral do Q4Wine
+vem dos scripts do Winetools e do Winetricks, que foram inicialmente escritos para facilitar o processo de instalação e configuração de software e suas dependências como as famosas DLL's no Wine.
 
-Mais Bora para Prática!!!... Nesse vídeo vou fazer a instalação e configuração básica de 04 (quatro) software (sóftuér) de gerenciamento gráfico para o Wine (wáin).
-
-O projeto PlayOnLinux (em português: "Jogue No Linux") é um front-end gráfico para a camada de compatibilidade de software do Wine (wáin), possibilitando que usuários do GNU/Linux instalem jogos eletrônicos desenvolvidos para a Plataforma Microsoft Windows, bem como muitos outros aplicativos. O sistema fornece scripts em shell prontos que especificam a configuração do Wine necessária para instalar e executar um aplicativo específico ou um jogo, facilitando a sua instalação. Ele utiliza um banco de dados de scripts online para instalar diferentes aplicativos que necessitam de configurações especiais e geralmente são mais complexos para instalar e configurar manualmente no Wine (wáin).
-
-O projeto Vineyard (víniyáRd) é uma coleção de ferramentas e bibliotecas projetadas para facilitar a instalação e o gerenciamento de programas desenvolvidos para a Plataforma Microsoft Windows rodarem nativamente no GNU/Linux utilizando o Wine (wáin). Mais especificamente, visa melhorar a integração do Wine (wáin) com o Desktop e facilitar a criação de programas e ferramentas que se integrem no Wine (wáin). O projeto é uma evolução do software PlayOnLinux (acrônimo POL), muitas vezes, não existe uma comparação entre os dois, mais sim, em alguns casos, o uso do PlayOnLinux e o Vineyard (víniyáRd) facilita o processo de instalação e configuração de software mais complexos, se no PlayOnLinux não funcionar, pode ser que no Vineyard (víniyáRd) funcione.
-
-O projeto Q4Wine (kíu fór wáin)é uma interface gráfica desenvolvida utilizando a linguagem de prgramação Qt para Wine. Ele tem o objetivo de ajudar a gerenciar os prefixos do Wine e aplicativos instalados de forma simples. A ideia geral do Q4Wine (kíu fór wáin) vem dos scripts do Winetools e do Winetricks, que foram inicialmente escritos para facilitar o processo de instalação e configuração de software e suas dependências como as famosas DLL's no Wine.
-
-O projeto CrossOver (anteriormente conhecido por CrossOver Office) é o nome coletivo de três programas comerciais e proprietários (Não Open Source e Não Free Software) desenvolvidos pela empresa CodeWeavers que permitem que diversas aplicações destinadas à plataforma Microsoft Windows sejam executadas ou instaladas no GNU/Linux, MacOS e Solaris, usando uma camada de compatibilidade e customização das bibliotecas do Windows no GNU/Linux. Os programas são versões proprietárias e modificadas da versão pública do Wine com correções no código, ferramentas de configuração mais amigáveis, ferramentas de virtualização e novas bibliotecas de tempo de execução (as famosas DLL's) customizadas.
+O projeto CrossOver (anteriormente conhecido por CrossOver Office) é o nome coletivo de três programas comerciais e
+proprietários (Não Open Source e Não Free Software) desenvolvidos pela empresa CodeWeavers que permitem que diversas
+aplicações destinadas à plataforma Microsoft Windows sejam executadas ou instaladas no GNU/Linux, MacOS e Solaris, usando uma
+camada de compatibilidade e customização das bibliotecas do Windows no GNU/Linux. Os programas são versões proprietárias e
+modificadas da versão pública do Wine com correções no código, ferramentas de configuração mais amigáveis, ferramentas de
+virtualização e novas bibliotecas de tempo de execução (as famosas DLL's) customizadas.
 
 WineHq......: https://www.winehq.org/
 WineTricks..: https://wiki.winehq.org/Winetricks/
