@@ -25,13 +25,13 @@ sudo add-apt-repository universe		#Repositório Universal
 sudo apt update             			#Atualização das listas do apt
 
 #Quarta Etapa: Instalação das Dependências do RetroPie
-sudo apt install joystick jstest-gtk vim git
+sudo apt install joystick jstest-gtk vim git dialog unzip xmlstarlet
 
 #Quinta Etapa: Clocando o Projeto do RetroPie do Github
 git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
 
 #Sexta Etapa: Executando a instalação do RetroPie
-cd RetroPie-Setup				#Acessando o diretório clonado
+cd RetroPie-Setup			#Acessando o diretório clonado
 sudo ./retropie_setup.sh		#Executando o script de instalação
 
 #Sétima Etapa: Utilizando o Menu de Instalação do RetroPie
