@@ -47,3 +47,12 @@ Basic install <Enter>
 
 #Oitava Etapa: Executando o RetroPie
 emulationstation
+
+sudo add-apt-repository multiverse
+sudo add-apt-repository universe
+sudo apt update
+sudo add-apt-repository ppa:gregory-hainaut/pcsx2.official.ppa
+sudo apt-get update
+sudo apt install libaio-dev:i386 libbz2-dev:i386 libcggl:i386 libegl1-mesa-dev:i386 libglew-dev:i386 libgles2-mesa-dev:i386 libgtk2.0-dev:i386 libjpeg-dev:i386 libsdl1.2-dev:i386 libwxgtk3.0-gtk3-dev:i386 nvidia-cg-toolkit zlib1g-dev:i386 libsdl2-dev:i386 libjack-jackd2-dev:i386 libportaudiocpp0:i386 portaudio19-dev:i386 liblzma-dev:i386 libsoundtouch-dev:i386 libxml2-dev:i386 libpcap0.8-dev:i386
+sudo apt install pcsx2 libretro-beetle-psx
+
