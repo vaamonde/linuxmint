@@ -14,6 +14,7 @@ sudo uname -a           #Verificando a versão do Kernel
 #Segunda Etapa: Atualização do Sistema Operacional Linux Mint
 sudo apt update             #Atualização das listas do apt
 sudo apt upgrade            #Atualização dos software
+sudo apt full-upgrade	    #Atualização completa dos softwares
 sudo apt dist-upgrade       #Atualização do firmaware e kernel
 sudo apt autoremove         #Remoção dos softwares desnecessários
 sudo apt autoclean          #Limpeza dos caches
