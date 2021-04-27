@@ -25,6 +25,7 @@ sudo dpkg --add-architecture i386		#Arquitetura i386
 sudo add-apt-repository universe		#Repositório Universal
 sudo add-apt-repository multiverse		#Repositório Multiversão
 sudo apt update             			#Atualização das listas do apt
+sudo apt upgrade            			#Atualização dos software
 
 #Quarta Etapa: Instalação das Dependências do RetroPie
 sudo apt install joystick jstest-gtk vim git dialog unzip xmlstarlet lsb-release
