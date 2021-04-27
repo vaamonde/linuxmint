@@ -8,7 +8,7 @@ Site do RetroPie: https://retropie.org.uk/
 
 #Primeira Etapa: Verificação da versão do Linux Mint
 sudo hostnamectl        #Verificando informações do sistema
-sudo lsb_release -c     #Verificando o codinome do 
+sudo lsb_release -c     #Verificando o codinome do sistema
 sudo uname -a           #Verificando a versão do Kernel
 
 #Segunda Etapa: Atualização do Sistema Operacional Linux Mint
@@ -19,38 +19,40 @@ sudo apt autoremove         #Remoção dos softwares desnecessários
 sudo apt autoclean          #Limpeza dos caches
 sudo apt clean              #Limpeza dos caches
 
-#Terceira Etapa: Habilitar a Arquitetura i386 e Repositório Universal
+#Terceira Etapa: Habilitar a Arquitetura i386 e Repositórios Extras
 sudo dpkg --add-architecture i386		#Arquitetura i386
 sudo add-apt-repository universe		#Repositório Universal
+sudo add-apt-repository multiverse		#Repositório Multiversão
 sudo apt update             			#Atualização das listas do apt
 
 #Quarta Etapa: Instalação das Dependências do RetroPie
-sudo apt install joystick jstest-gtk vim git dialog unzip xmlstarlet
+sudo apt install joystick jstest-gtk vim git dialog unzip xmlstarlet lsb-release
 
 #Quinta Etapa: Clocando o Projeto do RetroPie do Github
 git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
 
 #Sexta Etapa: Executando a instalação do RetroPie
-cd RetroPie-Setup			#Acessando o diretório clonado
-sudo ./retropie_setup.sh		#Executando o script de instalação
+cd RetroPie-Setup			#Acessando o diretório clonado do RetroPie
+sudo ./retropie_setup.sh		#Executando o script de instalação do RetrPie
 
 #Sétima Etapa: Utilizando o Menu de Instalação do RetroPie
-Update RetroPie-Setup script <Enter>
+S Update RetroPie-Setup script <Enter>
 	<Sim><Enter>
 		<Aceitar><Enter>
 			<Aceitar><Enter>
-(O PROCESSO DE ATUALIZAÇÃO DEMORA UM POUCO, SÓ AGUARDAR...)
 
-Basic install <Enter>
+I Basic install <Enter>
 	<Sim><Enter>
-(O PROCESSO DE INSTALAÇÃO DEMORA BASTANTE, SÓ AGUARDAR...)
+(OBS: ESSE PROCESSO DE INSTALAÇÃO DEMORA BASTANTE, SÓ AGUARDAR...)
+
+R Perform Reboot <Enter>
 
 #Oitava Etapa: Executando o RetroPie
-emulationstation
+emulationstation		#Executar o RetroPie pelo Terminal
+RetPie				#Executar o RetroPie pelo Menu
 
-sudo add-apt-repository multiverse
-sudo add-apt-repository universe
-sudo apt update
+
+===================================EM DESENVOLVIMENTO======================================
 sudo add-apt-repository ppa:gregory-hainaut/pcsx2.official.ppa
 sudo apt-get update
 sudo apt install libaio-dev:i386 libbz2-dev:i386 libcggl:i386 libegl1-mesa-dev:i386 libglew-dev:i386 libgles2-mesa-dev:i386 libgtk2.0-dev:i386 libjpeg-dev:i386 libsdl1.2-dev:i386 libwxgtk3.0-gtk3-dev:i386 nvidia-cg-toolkit zlib1g-dev:i386 libsdl2-dev:i386 libjack-jackd2-dev:i386 libportaudiocpp0:i386 portaudio19-dev:i386 liblzma-dev:i386 libsoundtouch-dev:i386 libxml2-dev:i386 libpcap0.8-dev:i386
