@@ -38,6 +38,8 @@ cd RetroPie-Setup			#Acessando o diretório clonado do RetroPie
 sudo ./retropie_setup.sh		#Executando o script de instalação do RetrPie
 
 #Sétima Etapa: Utilizando o Menu de Instalação do RetroPie
+NOTICE: <Aceitar>
+
 S Update RetroPie-Setup script <Enter>
 	<Sim><Enter>
 		<Aceitar><Enter>
