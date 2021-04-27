@@ -50,7 +50,8 @@ I Basic install <Enter>
 (OBS: ESSE PROCESSO DE INSTALAÇÃO DEMORA BASTANTE, SÓ AGUARDAR...)
 
 R Perform Reboot <Enter>
-
+	<Sim><Enter>
+	
 #Oitava Etapa: Executando o RetroPie
 emulationstation		#Executar o RetroPie pelo Terminal
 RetPie				#Executar o RetroPie pelo Menu
