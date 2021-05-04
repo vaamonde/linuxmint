@@ -1,0 +1,23 @@
+Wi-Fi: SENAC-TAT - 123@senac
+Etapa-01: Instalação do Linux Mint 20.1 em Notebook
+#01_ Instalação do Linux Mint 20.1 (usuário: senac - senha: 123@senac)
+#02_ Atualização do Linux Mint utilizando o MintUpdate
+#03_ Atualização do Linux Mint utilizando o Apt
+	sudo apt update
+	sudo apt upgrade
+	sudo apt full-upgrade
+	sudo apt dist-upgrade
+	sudo apt autoremove
+	sudo apt autoclean
+	sudo apt clean
+	sudo reboot
+#04_ Oracle VirtualBOX (https://www.virtualbox.org/)
+	 Debian --> Ubuntu (20.04.x) --> Linux Mint 20.x
+#05_ Google Chrome (https://www.google.com/chrome/)
+#06_ WPS Office 2019 DEB (https://linux.wps.com/)
+#07_ VS Code (https://code.visualstudio.com/download)
+#08_ Cisco Packet Tracer (https://www.netacad.com/pt-br)
+#09_ Edge Linux https://www.microsoftedgeinsider.com/
+#10_ Teams Linux https://www.microsoft.com/pt-br/microsoft-teams/download-app
+#11_ Cheese: https://wiki.gnome.org/Apps/Cheese (gerenciador de aplicativos)
+#12_ GTK UVC Viewer: http://guvcview.sourceforge.net/ (gerenciador de aplicativos)
