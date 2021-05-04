@@ -1,0 +1,19 @@
+#! /bin/sh
+
+BATOCERA_UUID=$(lsblk --fs --noheadings --pairs -o TYPE,LABEL,UUID |
+		       grep -E '^TYPE="part" LABEL="BATOCERA" UUID="[^"]*"$' |
+		       sed -e s+'^TYPE="part" LABEL="BATOCERA" UUID="\([^"]*\)"$'+'\1'+ | head -1)
+
+if test -n "${BATOCERA_UUID}"
+then
+    echo "Image batocera found on ${BATOCERA_UUID}" >&2
+
+    cat <<EOF
+menuentry "batocera.linux" {
+	insmod fat
+        search --no-floppy --fs-uuid --set=root ${BATOCERA_UUID}
+	linux /boot/linux label=BATOCERA console=tty3 quiet loglevel=0 vt.global_cursor_default=0
+	initrd /boot/initrd.gz
+}
+EOF
+fi
