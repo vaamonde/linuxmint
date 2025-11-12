@@ -1,0 +1,36 @@
+Objetivo da aula de hoje: 12/11/2025
+
+#01_ Se autenticar com a sua conta no Github no Windows (desktop senac) e também no Linux Mint.
+
+#02_ Finalização da Integração do Git, VScode e Github
+
+Material Github (Antigo) Dell-LinuxMint: 
+Link: https://github.com/vaamonde/dell-linuxmint/blob/master/software/23-git-github.md
+Vídeo: https://www.youtube.com/watch?v=JDCYyjbrJu0
+
+Material atualizado Python3: 
+Link: https://github.com/vaamonde/python3/blob/main/01-introduction/01-install.md
+Vídeo: https://www.youtube.com/watch?v=klIKuVGRHmM
+
+Link: https://github.com/vaamonde/python3/blob/main/01-introduction/02-git-gthub.md
+Vídeo: https://www.youtube.com/watch?v=VBxmsmPK60s
+------------------------------------------
+
+git clone https://github.com/vaamonde/linuxmint
+git pull
+
+git add .
+git commit -m "SENAC Tatuapé"
+git push
+
+
+
+
+
+#03_ Adicionando novo Hard Disk no VirtualBOX (Particionamento, Formatação de Disco Básico e Montagem)
+
+#04_ Criação de Usuário no Linux Mint
+
+#05_ Personalização da Tela de Login do Linux Mint
+
+#06_ Conhecendo o Gerenciador de Aplicativo e Configurações do Sistema do Linux Mint
